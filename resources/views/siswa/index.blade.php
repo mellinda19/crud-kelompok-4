@@ -84,9 +84,6 @@
             </div>
         </div>
 
-        <div class="mt-3">
-            {{ $siswas->links() }}
-        </div>
     </div>
 
 </body>

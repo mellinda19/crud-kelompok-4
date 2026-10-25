@@ -9,7 +9,7 @@ class SiswaController extends Controller
 {
     public function index()
     {
-        $siswas = Siswa::orderBy('nama', 'ASC')->paginate(5);
+        $siswas = Siswa::all();
         return view('siswa.index', compact('siswas'));
     }
 

@@ -11,7 +11,9 @@ class SiswaSeeder extends Seeder
 {
     public function run(): void
     {
+
         DB::table('siswas')->truncate();
+
 
         $data = [
             ['nis' => '22001', 'nama' => 'Aetheria Aurora', 'kelas' => 'XII PPLG', 'jurusan' => 'PPLG', 'tanggal_lahir' => '2007-04-12', 'alamat' => 'Jl. Edelweis No. 1', 'keterangan' => 'Aktif'],
