@@ -9,7 +9,6 @@ class Siswa extends Model
 {
     use HasFactory;
 
-    // Tambahkan baris ini di bawah:
     protected $fillable = [
         'nis',
         'nama',
