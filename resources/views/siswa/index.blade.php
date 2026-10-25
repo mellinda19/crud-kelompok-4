@@ -42,6 +42,7 @@
                             <th>Nama</th>
                             <th>Kelas</th>
                             <th>Jurusan</th>
+                            <th>Tanggal Lahir</th>
                             <th>Keterangan</th>
                             <th>Alamat</th>
                             <th>Dibuat Pada</th>
@@ -57,7 +58,10 @@
                                 <td>{{ $siswa->nama }}</td>
                                 <td>{{ $siswa->kelas }}</td>
                                 <td>{{ $siswa->jurusan }}</td>
-                                <td><span class="badge bg-success">{{ $siswa->keterangan }}</span></td>
+                                <td>{{ $siswa->tanggal_lahir }}</td>
+                                <td>
+                                    <span class="badge bg-success">{{ $siswa->keterangan }}</span>
+                                </td>
                                 <td>{{ $siswa->alamat }}</td>
                                 <td>{{ $siswa->created_at->format('d-m-Y H:i') }}</td>
                                 <td>{{ $siswa->updated_at->format('d-m-Y H:i') }}</td>

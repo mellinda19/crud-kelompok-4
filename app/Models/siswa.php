@@ -2,9 +2,21 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class siswa extends Model
+class Siswa extends Model
 {
-    //
+    use HasFactory;
+
+    // Tambahkan baris ini di bawah:
+    protected $fillable = [
+        'nis',
+        'nama',
+        'kelas',
+        'jurusan',
+        'tanggal_lahir',
+        'alamat',
+        'keterangan',
+    ];
 }
